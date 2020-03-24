@@ -3,6 +3,7 @@
 * Студент: [Алексей Стребулаев](https://up.htmlacademy.ru/adaptive/19/user/1232753).
 * Наставник: [Поданев Михаил](https://htmlacademy.ru/profile/mpodanev).
 
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
