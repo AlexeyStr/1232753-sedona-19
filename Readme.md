@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Стребулаев](https://up.htmlacademy.ru/adaptive/19/user/1232753).
-* Наставник: `Неизвестно`.
+* Наставник: [Поданев Михаил](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
