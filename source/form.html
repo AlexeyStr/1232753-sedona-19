@@ -7,7 +7,12 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="main-nav--form">
+        <nav class="main-nav main-nav--form">
+          <p class="logo-mobile">
+            <a href="index.html">
+              <img src="https://via.placeholder.com/150x150" width="1" height="1" alt="city of Sedona">Седона
+            </a>
+          </p>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
@@ -23,17 +28,12 @@
             </li>
           </ul>
           <ul class="main-nav__list top-list">
-            <li class="top-list__item logo-image">
-              <a href="index.html">
-                <img src="https://via.placeholder.com/150x150" width="1" height="1" alt="city of Sedona">Седона
-              </a>
-            </li>
             <li class="top-list__item">
               <button class="close-button">Открыть/Закрыть меню</button>
             </li>
           </ul>
-        </nav> 
-      </div>     
+        </nav>
+      </div>
     </header>
     <main class="page-form">
       <h1 class="visually-hidden">Форма для отзыва</h1>
@@ -43,27 +43,28 @@
           <p class="preface__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
         </section>
         <section class="user-form">
+          <h2 class="visually-hidden">Форма</h2>
           <form  class="write-us" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="user-data">
               <legend class="user-data__title">Представьтесь:</legend>
               <p class="user-data__name">
                 <label for="name">Имя<sup>*</sup>:</label>
-                <input type="text" name="name" id="name" placeholder="Петр" autocomplete="off">  
+                <input type="text" name="name" id="name" placeholder="Петр" autocomplete="off">
               </p>
               <p class="user-data__family">
                 <label for="family">Фамилия<sup>*</sup>:</label>
                 <input type="text" name="family" id="family" placeholder="Иванов" autocomplete="off">
               </p>
               <p class="user-data__middle-name">
-                <label for="name">Отчество:</label>
-                <input type="text" name="name" id="name" placeholder="Александрович" autocomplete="off">  
+                <label for="middle-name">Отчество:</label>
+                <input type="text" name="name" id="middle-name" placeholder="Александрович" autocomplete="off">
               </p>
             </fieldset>
             <fieldset class="user-contacts">
               <legend>Контактная информация:</legend>
               <p class="user-contacts__phone">
                 <label for="phone">Контактный телефон<sup>*</sup>:</label>
-                <input type="phone" name="phone" id="phone" placeholder="Введите телефон" autocomplete="off">  
+                <input type="tel" name="phone" id="phone" placeholder="Введите телефон" autocomplete="off">
               </p>
               <p class="user-contacts__mail">
                 <label for="mail">Электронная почта<sup>*</sup>:</label>
@@ -78,7 +79,7 @@
               </p>
               <p class="impression__item">
                 <input type="radio" id="negative" name="impressions" value="negative" class="visually-hidden">
-                <label for="negative">Скорее отрицательное</label> 
+                <label for="negative">Скорее отрицательное</label>
               </p>
               <p class="impression__item">
                 <input type="radio" id="no-answer" name="impressions" value="no-answer" class="visually-hidden">
@@ -116,24 +117,27 @@
             </div>
           </form>
         </section>
-      </div>  
+      </div>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__social social-list">
         <li class="social-list__item tw">
-          <a href="" aria-label="Твиттер"></a>
+          <a href="" aria-label="Твиттер">Твиттер</a>
         </li>
         <li class="social-list__item fb">
-          <a href="" aria-label="Фейсбук"></a>
+          <a href="" aria-label="Фейсбук">Фейсбук</a>
         </li>
         <li class="social-list__item">
-          <a href="" aria-label="Ютуб"></a>
+          <a href="" aria-label="Ютуб">Ютуб</a>
         </li>
       </ul>
       <div class="page-footer__copyright">
-        <a class="copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <p class="page-footer_text">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="1" height="1" alt="Логотип HTML academy">
+        </a>
       </div>
     </footer>
-  </body>  
+  </body>
 </html>
