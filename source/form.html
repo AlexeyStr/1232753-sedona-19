@@ -10,7 +10,7 @@
         <nav class="main-nav main-nav--form">
           <p class="logo-mobile">
             <a href="index.html">
-              <img src="https://via.placeholder.com/150x150" width="1" height="1" alt="city of Sedona">Седона
+              <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип Седона">Седона
             </a>
           </p>
           <ul class="main-nav__list site-list">
@@ -27,23 +27,22 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
             </li>
           </ul>
-          <ul class="main-nav__list top-list">
-            <li class="top-list__item">
-              <button class="close-button">Открыть/Закрыть меню</button>
-            </li>
-          </ul>
+          <div class="main-nav__list top-list">
+            <button class="close-button">Открыть/Закрыть меню</button>
+          </div>
         </nav>
       </div>
     </header>
     <main class="page-form">
       <h1 class="visually-hidden">Форма для отзыва</h1>
       <div class="container">
-        <section class="preface">
-          <h2 class="preface__title">Оставьте свой отзыв</h2>
-          <p class="preface__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
-        </section>
+
         <section class="user-form">
           <h2 class="visually-hidden">Форма</h2>
+          <div class="preface">
+            <h2 class="preface__title">Оставьте свой отзыв</h2>
+            <p class="preface__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+          </div>
           <form  class="write-us" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="user-data">
               <legend class="user-data__title">Представьтесь:</legend>
@@ -73,15 +72,15 @@
             </fieldset>
             <fieldset class="impressions">
               <legend>Ваше общее впечатление:</legend>
-              <p class="impression__item">
+              <p class="impressions__item">
                 <input type="radio" id="positive" name="impressions" value="positive" class="visually-hidden" checked>
                 <label for="positive">Скорее положительное</label>
               </p>
-              <p class="impression__item">
+              <p class="impressions__item">
                 <input type="radio" id="negative" name="impressions" value="negative" class="visually-hidden">
                 <label for="negative">Скорее отрицательное</label>
               </p>
-              <p class="impression__item">
+              <p class="impressions__item">
                 <input type="radio" id="no-answer" name="impressions" value="no-answer" class="visually-hidden">
                 <label for="no-answer">Затрудняюсь ответить</label>
               </p>
@@ -113,7 +112,7 @@
               </p>
             </fieldset>
             <div class="send">
-              <input type="submit" class="button Button--send" value="Отправить отзыв" aria-label="Отправить отзыв">
+              <input type="submit" class="button button--send" value="Отправить отзыв" aria-label="Отправить отзыв">
             </div>
           </form>
         </section>
@@ -135,7 +134,7 @@
       <div class="page-footer__copyright">
         <p class="page-footer_text">Разработано</p>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="1" height="1" alt="Логотип HTML academy">
+          <img class="page-footer__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML academy">
         </a>
       </div>
     </footer>
