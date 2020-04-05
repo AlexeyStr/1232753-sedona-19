@@ -1,0 +1,38 @@
+.main-nav {
+  width: 320px;
+  position: relative;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #81b3d2;
+}
+.site-list__item {
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+.site-list__item--text {
+  width: 320px;
+  height: 55px;
+  display: flex;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+.link-text {
+  margin: auto;
+}
+.top-list {
+  height: 55px;
+  display: flex;
+  margin: auto;
+}
+.close-button {
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 0;
+}

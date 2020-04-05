@@ -3,61 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="container">
         <nav class="main-nav">
           <p class="logo-mobile">
-            <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип Седона">Седона
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
           </p>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="site-list__item--text"><span class="link-text">Главная</span></a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site-list__item--text" href="photo.html"><span class="link-text">Фото и видео</span></a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="site-list__item--text" href="form.html"><span class="link-text">Форма отзыва</span></a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+              <a class="site-list__item--text" href="https://htmlacademy.ru/intensive/adaptive"><span class="link-text">Html Academy</span></a>
             </li>
           </ul>
           <div class="main-nav__list top-list">
-            <button class="close-button">Открыть/Закрыть меню</button>
+            <button class="close-button">меню</button>
           </div>
         </nav>
       </div>
     </header>
     <main class="page-main">
+      <div class="page-main__bg-image">
+        <div class="page-main__bg-text"></div>
+        <div class="page-main__bg-intro"></div>
+      </div>
       <div class="container">
         <section class="preface">
           <h1 class="preface__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="preface__text">Рассмотрим 5 причин, по которым Аризона круче, чем гранд каньон!</p>
+          <p class="preface__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
         <section class="main-content">
           <ul class="main-content__list">
             <li class="main-content__item real-city">
               <div class="real-city">
+                <div class="main-content__bg-image"></div>
                 <h2 class="main-content__title">Настоящий городок</h2>
                 <p class="main-content__text">- №1 -</p>
                 <p class="main-content__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="real-city__img" src="https://via.placeholder.com/520x260" width="520" height="260" alt="вид на городок">
+              <img class="real-city__img" src="img/main-city-mobile@1x.jpg" width="520" height="260" alt="вид на городок">
               <ul class="real-city__list">
                 <li class="real-city__item">
-                  <h3 class="main-content__title">Жилье</h3>
-                  <p class="main-content__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <h3 class="real-city__title">Жилье</h3>
+                  <p class="real-city__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="real-city__item">
-                  <h3 class="main-content__title">Сувениры</h3>
-                  <p class="main-content__text">Не толко китайского, но и местного производства!</p>
+                  <h3 class="real-city__title">Сувениры</h3>
+                  <p class="real-city__text">Не толко китайского, но и местного производства!</p>
                 </li>
                 <li class="real-city__item">
-                  <h3 class="main-content__title">Еда</h3>
-                  <p class="main-content__text">Всегда заказывайте фирменный бургер, вы не зазочаруетесь!</p>
+                  <h3 class="real-city__title">Еда</h3>
+                  <p class="real-city__text">Всегда заказывайте фирменный бургер, вы не зазочаруетесь!</p>
                 </li>
               </ul>
             </li>
@@ -67,10 +74,10 @@
                 <p class="main-content__text">- №2 -</p>
                 <p class="main-content__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="bridge-devil__img" src="https://via.placeholder.com/520x260" width="520" height="260" alt="вид на мост">
+              <img class="bridge-devil__img" src="img/photo-bridge-mobile@1x.jpg" width="520" height="260" alt="вид на мост">
             </li>
-            <li class="main-content__item">
-              <div class="main-content__reason">
+            <li class="main-content__item reason">
+              <div class="reason">
                 <h2 class="main-content__title">Небольшая площадь</h2>
                 <p class="main-content__text">- №3 -</p>
                 <p class="main-content__text">Все интересные места находятся очень близко</p>
@@ -104,24 +111,27 @@
       </div>
     </main>
     <footer class="page-footer">
-      <p class="page-footer__hashtag">#visitsedona</p>
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item tw">
-          <a href="" aria-label="Твиттер">Твиттер</a>
-        </li>
-        <li class="social-list__item fb">
-          <a href="" aria-label="Фейсбук">Фейсбук</a>
-        </li>
-        <li class="social-list__item">
-          <a href="" aria-label="Ютуб">Ютуб</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <p class="page-footer_text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML academy">
-        </a>
+      <div class="container">
+        <p class="page-footer__hashtag">#visitsedona</p>
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item tw">
+            <a href="" aria-label="Твиттер">Твиттер</a>
+          </li>
+          <li class="social-list__item fb">
+            <a href="" aria-label="Фейсбук">Фейсбук</a>
+          </li>
+          <li class="social-list__item">
+            <a href="" aria-label="Ютуб">Ютуб</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <p class="page-footer_text">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML academy">
+          </a>
+        </div>
       </div>
+
     </footer>
   </body>
 </html>

@@ -1,0 +1,42 @@
+.main-content {
+  margin: 0;
+}
+.main-content__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.main-content__item .real-city {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #81b3d2;
+}
+.main-content__bg-image {
+  background-image: url(../../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 320px;
+  height: 37px;
+  top: -20px;
+  left: -20px;
+}
+.main-content__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.main-content__text {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 265px;
+}
+
+.main-content__item .reason {
+  margin: 0;
+  padding-top: 33px;
+  padding-bottom: 16px;
+}

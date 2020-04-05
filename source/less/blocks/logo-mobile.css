@@ -1,0 +1,7 @@
+.logo-mobile {
+  position: absolute;
+  top: 220px;
+  right: calc(50% - 51px);
+  margin: 0;
+  width: 102px;
+}
