@@ -7,7 +7,7 @@
   list-style: none;
   position: relative;
 }
-.main-content__item.real-city {
+.main-content__item .real-city {
   margin: 0 auto;
   padding: 0;
   padding-top: 60px;
