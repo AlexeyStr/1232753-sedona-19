@@ -3,18 +3,31 @@
 }
 
 .main-content__list {
-  margin: 0;
-  padding: 0;
+  .list-reset();
   list-style: none;
   position: relative;
 }
 
-.main-content__item .real-city {
+.list-city {
+  padding: 41px 41px 41px 0;
+  list-style: none;
+}
+
+.list-city__item {
+  padding-left: 70px;
+  position: relative;
+}
+
+.list-city__item:not(:last-child) {
+  margin-bottom: 39px;
+}
+
+.main-content__city {
   margin: 0 auto;
   padding: 0;
   padding-top: 60px;
   padding-bottom: 30px;
-  background-color: #81b3d2;
+  background-color: @bg-lightblue;
 }
 
 .main-content__bg-image {
@@ -24,18 +37,153 @@
   width: 320px;
   height: 37px;
   top: -20px;
-  left: -20px;
 }
 
 .main-content__title {
   margin: 0;
   margin-bottom: 15px;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.list-city__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .main-content__text {
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   text-align: center;
-  width: 265px;
+  width: 245px;
+  text-transform: uppercase;
+}
+
+.main-content__text-mod {
+  margin: 0 auto;
+  margin-bottom: 12px;
+  text-align: center;
+  width: 255px;
+  text-transform: uppercase;
+}
+
+.list-city__text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.list-city li:nth-child(1)::before {
+  content: "";
+  background-image: url("../../img/icon-house1.png");
+  position: absolute;
+  left: 21px;
+  top: -12px;
+  width: 39px;
+  height: 37px;
+}
+
+.list-city li:nth-child(2)::before {
+  content: "";
+  background-image: url("../../img/icon-gift1.png");
+  position: absolute;
+  left: 25px;
+  top: -12px;
+  width: 32px;
+  height: 38px;
+}
+
+.list-city li:nth-child(3)::before {
+  content: "";
+  background-image: url("../../img/icon-burger1.png");
+  position: absolute;
+  left: 18px;
+  top: -10px;
+  width: 40px;
+  height: 35px;
+}
+
+.main-content__bridge {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 26px;
+  background-color: #81b3d2;
+}
+
+.main-content__img-bridge {
+  position: relative;
+  top: -74px;
+  z-index: -1;
+}
+
+.main-content__list .main-content__item:nth-child(3) {
+  margin-top: -80px;
+}
+
+.main-content__reason {
+  margin-top: -6px;
+  padding-top: 33px;
+  padding-bottom: 16px;
+  background-color: #eeeeee;
+  position: relative;
+}
+
+.main-content__reason.line::after {
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: #d6d6d6;
+  position: absolute;
+  left: 20px;
+  bottom: 1px;
+  z-index: 1;
+}
+
+.page-main__search {
+  .list-reset();
+  padding-top: 33px;
+  padding-bottom: 49px;
+  text-transform: uppercase;
+}
+
+.page-main__search .page-main-title {
+  font-size: 21px;
+}
+
+.page-main__search .page-main__text {
+  margin-bottom: 40px;
+}
+
+.page-main__button-search {
+  .button();
+  margin: 0;
+  margin-left: 20px;
+  width: 280px;
+  height: 58px;
+
+  &:hover {
+    background-color: @bg-middleblue;
+  }
+
+  &:active {
+    background-color: @bg-darkblue;
+    color: rgba(#ffffff, 0.2);
+  }
+}
+
+.page-main__map {
+  position: relative;
+}
+
+.page-main__map::before {
+  content: "";
+  background-image: url("../../img/icon-map-marker.svg");
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  z-index: 1;
+  width: 27px;
+  height: 27px;
 }

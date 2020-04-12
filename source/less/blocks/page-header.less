@@ -1,5 +1,25 @@
 .page-header {
-  margin: 0;
-  padding: 0;
+  .container();
+  padding-bottom: 55px;
   min-width: 320px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  border: none;
+  background: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.close-button--open {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
