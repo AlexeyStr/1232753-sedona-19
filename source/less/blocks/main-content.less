@@ -8,20 +8,6 @@
   position: relative;
 }
 
-.list-city {
-  padding: 41px 41px 41px 0;
-  list-style: none;
-}
-
-.list-city__item {
-  padding-left: 70px;
-  position: relative;
-}
-
-.list-city__item:not(:last-child) {
-  margin-bottom: 39px;
-}
-
 .main-content__city {
   margin: 0 auto;
   padding: 0;
@@ -47,12 +33,6 @@
   font-size: 15px;
 }
 
-.list-city__title {
-  margin: 0;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
 .main-content__text {
   margin: 0 auto;
   margin-bottom: 12px;
@@ -67,41 +47,6 @@
   text-align: center;
   width: 255px;
   text-transform: uppercase;
-}
-
-.list-city__text {
-  margin: 0;
-  font-size: 16px;
-}
-
-.list-city li:nth-child(1)::before {
-  content: "";
-  background-image: url("../../img/icon-house1.png");
-  position: absolute;
-  left: 21px;
-  top: -12px;
-  width: 39px;
-  height: 37px;
-}
-
-.list-city li:nth-child(2)::before {
-  content: "";
-  background-image: url("../../img/icon-gift1.png");
-  position: absolute;
-  left: 25px;
-  top: -12px;
-  width: 32px;
-  height: 38px;
-}
-
-.list-city li:nth-child(3)::before {
-  content: "";
-  background-image: url("../../img/icon-burger1.png");
-  position: absolute;
-  left: 18px;
-  top: -10px;
-  width: 40px;
-  height: 35px;
 }
 
 .main-content__bridge {
@@ -139,51 +84,4 @@
   left: 20px;
   bottom: 1px;
   z-index: 1;
-}
-
-.page-main__search {
-  .list-reset();
-  padding-top: 33px;
-  padding-bottom: 49px;
-  text-transform: uppercase;
-}
-
-.page-main__search .page-main-title {
-  font-size: 21px;
-}
-
-.page-main__search .page-main__text {
-  margin-bottom: 40px;
-}
-
-.page-main__button-search {
-  .button();
-  margin: 0;
-  margin-left: 20px;
-  width: 280px;
-  height: 58px;
-
-  &:hover {
-    background-color: @bg-middleblue;
-  }
-
-  &:active {
-    background-color: @bg-darkblue;
-    color: rgba(#ffffff, 0.2);
-  }
-}
-
-.page-main__map {
-  position: relative;
-}
-
-.page-main__map::before {
-  content: "";
-  background-image: url("../../img/icon-map-marker.svg");
-  position: absolute;
-  top: 160px;
-  left: 150px;
-  z-index: 1;
-  width: 27px;
-  height: 27px;
 }

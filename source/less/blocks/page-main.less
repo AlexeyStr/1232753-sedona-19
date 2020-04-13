@@ -62,3 +62,50 @@
   font-size: 12px;
   text-transform: uppercase;
 }
+
+.page-main__search {
+  .list-reset();
+  padding-top: 33px;
+  padding-bottom: 49px;
+  text-transform: uppercase;
+}
+
+.page-main__search .page-main-title {
+  font-size: 21px;
+}
+
+.page-main__search .page-main__text {
+  margin-bottom: 40px;
+}
+
+.page-main__button-search {
+  .button();
+  margin: 0;
+  margin-left: 20px;
+  width: 280px;
+  height: 58px;
+
+  &:hover {
+    background-color: @bg-middleblue;
+  }
+
+  &:active {
+    background-color: @bg-darkblue;
+    color: rgba(#ffffff, 0.2);
+  }
+}
+
+.page-main__map {
+  position: relative;
+}
+
+.page-main__map::before {
+  content: "";
+  background-image: url("../../img/icon-map-marker.svg");
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  z-index: 1;
+  width: 27px;
+  height: 27px;
+}
