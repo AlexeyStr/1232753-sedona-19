@@ -1,0 +1,36 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  height: 55px;
+}
+
+.site-list__text {
+  width: 320px;
+  height: 55px;
+  display: flex;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @bg-lightblue;
+
+  &:hover {
+    background-color: @bg-middleblue;
+  }
+
+  &:active {
+    background-color: @bg-darkblue;
+    color: rgba(#ffffff, 0.2);
+  }
+}
+
+.link-text {
+  margin: auto;
+}

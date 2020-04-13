@@ -1,0 +1,111 @@
+.page-main {
+  .container();
+  position: relative;
+}
+
+.page-main__bg-image {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  width: 320px;
+  height: 389px;
+  margin: 0 auto;
+  padding-top: 390px;
+  z-index: -1;
+}
+
+.page-main__bg-text {
+  background-image: url("../../img/text-sedona-index.svg");
+  background-size: 282px 214px;
+  position: absolute;
+  left: 20px;
+  top: 90px;
+  height: 214px;
+  width: 282px;
+}
+
+.page-main__bg-intro {
+  background-image: url("../../img/bg-intro-triangle-mobile.svg");
+  background-size: 320px 51px;
+  position: absolute;
+  left: 0;
+  top: 351px;
+  height: 51px;
+  width: 320px;
+}
+
+.page-main__preface {
+  padding-top: 50px;
+  height: 221px;
+}
+
+.page-main__title {
+  width: 255px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.page-main__text {
+  width: 255px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: pre-line;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.page-main__search {
+  .list-reset();
+  padding-top: 33px;
+  padding-bottom: 49px;
+  text-transform: uppercase;
+}
+
+.page-main__search .page-main-title {
+  font-size: 21px;
+}
+
+.page-main__search .page-main__text {
+  margin-bottom: 40px;
+}
+
+.page-main__button-search {
+  .button();
+  margin: 0;
+  margin-left: 20px;
+  width: 280px;
+  height: 58px;
+
+  &:hover {
+    background-color: @bg-middleblue;
+  }
+
+  &:active {
+    background-color: @bg-darkblue;
+    color: rgba(#ffffff, 0.2);
+  }
+}
+
+.page-main__map {
+  position: relative;
+}
+
+.page-main__map::before {
+  content: "";
+  background-image: url("../../img/icon-map-marker.svg");
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  z-index: 1;
+  width: 27px;
+  height: 27px;
+}
