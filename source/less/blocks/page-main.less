@@ -11,7 +11,6 @@
   width: 320px;
   height: 389px;
   margin: 0 auto;
-  padding-top: 390px;
   z-index: -1;
 }
 
@@ -108,4 +107,77 @@
   z-index: 1;
   width: 27px;
   height: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    .container-tab();
+  }
+
+  .page-main__bg-image {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    width: 768px;
+    height: 518px;
+  }
+
+  .page-main__bg-text {
+    background-image: url("../../img/text-sedona-index.svg");
+    background-size: 460px 350px;
+    position: absolute;
+    left: 153px;
+    top: 77px;
+    height: 350px;
+    width: 460px;
+  }
+
+  .page-main__bg-intro {
+    background-image: url("../../img/bg-intro-triangle-tablet.svg");
+    background-size: 768px 57px;
+    top: 461px;
+    height: 57px;
+    width: 768px;
+  }
+
+  .page-main__preface {
+    padding-top: 51px;
+    padding-bottom: 55px;
+    height: auto;
+  }
+
+  .page-main__title {
+    width: 490px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 21px;
+  }
+
+  .page-main__text {
+    width: 490px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    .container-desk();
+  }
+
+  .page-main__bg-image {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    width: 1200px;
+    height: 518px;
+  }
+
+  .page-main__bg-text {
+    left: 370px;
+    top: 78px;
+  }
+
+  .page-main__bg-intro {
+    background-image: url("../../img/bg-intro-triangle-desktop.svg");
+    background-size: 1200px 57px;
+    top: 461px;
+    height: 57px;
+    width: 1200px;
+  }
 }

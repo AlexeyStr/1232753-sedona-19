@@ -34,3 +34,58 @@
 .link-text {
   margin: auto;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    max-width: 153px;
+    height: 56px;
+    background-color: #ffffff;
+  }
+
+  .site-list__item:nth-child(3) {
+    padding-left: 156px;
+    max-width: 309px;
+  }
+
+  .site-list__text {
+    width: 153px;
+    height: 55px;
+    display: flex;
+    box-shadow: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: @bg-darkblue;
+      color: rgba(#ffffff, 0.2);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    min-width: 239px;
+  }
+
+  .site-list__item:nth-child(3) {
+    padding-left: 244px;
+    min-width: 483px;
+  }
+
+  .site-list__text {
+    width: 239px;
+  }
+}
