@@ -35,3 +35,38 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    .container-tab();
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 60px;
+  }
+
+  .page-footer__hashtag {
+    margin: 0;
+    line-height: 49px;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+  }
+
+  .page-footer__text {
+    line-height: 49px;
+  }
+
+  .page-footer__logo {
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    .container-desk();
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 120px;
+  }
+}

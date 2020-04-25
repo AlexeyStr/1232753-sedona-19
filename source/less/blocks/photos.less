@@ -60,3 +60,148 @@
   font-size: 14px;
   font-weight: 700;
 }
+
+@media (min-width: @tablet-width) {
+  .photos {
+    margin-top: -228px;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  .photos__item {
+    padding: 0;
+    padding-bottom: 20px;
+    border-top: none;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .photos__main {
+    min-width: 648px;
+    min-height: 267px;
+  }
+
+  .photos__img-sunset {
+    content: url("../../img/photo-sunset-tablet@1x.jpg");
+    width: 648px;
+    height: 400px;
+  }
+
+  .photos__others {
+    min-width: 324px;
+    min-height: 267px;
+  }
+
+  .photos__img-cactus {
+    content: url("../../img/photo-cactus-tablet@1x.jpg");
+    width: 324px;
+    height: 267px;
+  }
+
+  .photos__img-roads {
+    content: url("../../img/photo-roads-tablet@1x.jpg");
+    width: 324px;
+    height: 267px;
+  }
+
+  .photos__img-bridge {
+    content: url("../../img/photo-bridge-tablet@1x.jpg");
+    width: 324px;
+    height: 267px;
+  }
+
+  .photos__title {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .photos__text {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .photos__likes {
+    position: absolute;
+    bottom: 32px;
+    right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__list {
+    padding: 0;
+  }
+
+  .photos__item {
+    padding: 0;
+  }
+
+  .photos__main {
+    min-width: 1200px;
+    min-height: 400px;
+  }
+
+  .photos__img-sunset {
+    content: url("../../img/photo-sunset-desktop@1x.jpg");
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photos__others {
+    min-width: 400px;
+    min-height: 267px;
+  }
+
+  .photos__img-cactus {
+    content: url("../../img/photo-cactus-desktop@1x.jpg");
+    width: 400px;
+    height: 267px;
+  }
+
+  .photos__img-roads {
+    content: url("../../img/photo-roads-desktop@1x.jpg");
+    width: 400px;
+    height: 267px;
+  }
+
+  .photos__img-bridge {
+    content: url("../../img/photo-bridge-desktop@1x.jpg");
+    width: 400px;
+    height: 267px;
+  }
+
+  .photos__title {
+    position: absolute;
+    bottom: 36px;
+    color: #ffffff;
+  }
+
+  .photos__text {
+    position: absolute;
+    bottom: 14px;
+    color: #ffffff;
+  }
+
+  .photos__likes {
+    bottom: 32px;
+  }
+
+  .photos__button {
+    opacity: 1;
+  }
+
+  .photos__result {
+    color: #ffffff;
+  }
+
+  .photos__item a {
+    height: 267px;
+  }
+}
