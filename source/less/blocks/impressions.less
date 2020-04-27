@@ -58,3 +58,41 @@
 .impressions__item input[type="radio"] {
   display: none;
 }
+
+@media (min-width: @tablet-width) {
+  .impressions {
+    width: 324px;
+    order: -1;
+  }
+
+  .impressions legend::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 292px;
+    background-color: #f2f2f2;
+    top: 0;
+    right: 0;
+  }
+
+  .impressions__item {
+    padding-top: 37px;
+    font-size: 18px;
+  }
+
+  .impressions__title {
+    padding-top: 0;
+    text-align: unset;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impressions {
+    width: 480px;
+  }
+
+  .impressions__title {
+    margin-left: 60px;
+  }
+}

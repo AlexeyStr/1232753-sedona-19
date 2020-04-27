@@ -30,3 +30,52 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    border: none;
+    padding-top: 68px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+  }
+
+  .presentation__title {
+    font-size: 21px;
+  }
+
+  .presentation__text {
+    padding: 0 115px;
+    margin-bottom: 78px;
+  }
+
+  .presentation__video {
+    min-width: 648px;
+    height: 499px;
+  }
+
+  .presentation__img {
+    content: url("../../img/video-tablet@1x.jpg");
+    width: 648px;
+    height: 499px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation {
+    padding-top: 72px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 49px;
+  }
+
+  .presentation__text {
+    padding: 0 180px;
+  }
+
+  .presentation__img {
+    content: url("../../img/video-desktop@1x.jpg");
+    width: 800px;
+    height: 500px;
+  }
+}

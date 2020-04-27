@@ -16,3 +16,29 @@
   top: 0;
   left: -20px;
 }
+
+@media (min-width: @tablet-width) {
+  .write-us {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 60px;
+  }
+
+  .write-us fieldset::before {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #f2f2f2;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .write-us {
+    padding: 0 120px;
+  }
+}

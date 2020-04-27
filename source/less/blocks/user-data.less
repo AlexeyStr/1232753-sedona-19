@@ -101,3 +101,76 @@
   background-color: #f2f2f2;
   cursor: pointer;
 }
+
+@media (min-width: @tablet-width) {
+  .user-data {
+    width: 324px;
+    padding-left: 58px;
+  }
+
+  .user-data__title {
+    padding-top: 0;
+    padding-bottom: 53px;
+    text-align: unset;
+    font-size: 21px;
+  }
+
+  .user-data__name {
+    margin-bottom: 22px;
+  }
+
+  .user-data__name label {
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  .user-data__name input {
+    width: 216px;
+    font-size: 18px;
+  }
+
+  .user-data__family {
+    margin-bottom: 22px;
+  }
+
+  .user-data__family label {
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  .user-data__family input {
+    width: 178px;
+    font-size: 18px;
+  }
+
+  .user-data__middle-name label {
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  .user-data__middle-name input {
+    margin-left: 9px;
+    width: 178px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-data {
+    width: 480px;
+    padding-left: 86px;
+  }
+
+  .user-data__name input {
+    width: 350px;
+  }
+
+  .user-data__family input {
+    width: 312px;
+  }
+
+  .user-data__middle-name input {
+    margin-left: 7px;
+    width: 314px;
+  }
+}
