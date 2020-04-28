@@ -56,3 +56,55 @@
 .visited__item input[type="checkbox"] {
   display: none;
 }
+
+@media (min-width: @tablet-width) {
+  .visited {
+    width: 100%;
+    padding: 0;
+  }
+
+  .visited__title {
+    width: 396px;
+    padding: 50px 0;
+    font-size: 21px;
+    background-color: #ffffff;
+  }
+
+  .visited__wrap {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .visited__item {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+
+  .visited legend::before {
+    position: absolute;
+    content: "";
+    width: 648px;
+    height: 1px;
+    background-color: #f2f2f2;
+    top: 70px;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visited legend::before {
+    width: 960px;
+  }
+
+  .visited__wrap {
+    margin-left: 0;
+    justify-content: space-between;
+  }
+
+  .visited__item {
+    width: unset;
+    margin-bottom: 25px;
+  }
+}

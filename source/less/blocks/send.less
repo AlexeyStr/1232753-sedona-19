@@ -11,3 +11,31 @@
   height: 58px;
   cursor: pointer;
 }
+
+.send__impotant {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .send {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+
+  .send__button {
+    width: 324px;
+  }
+
+  .send__impotant {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .send__button {
+    width: 480px;
+  }
+}
