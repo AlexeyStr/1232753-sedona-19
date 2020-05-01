@@ -5,7 +5,7 @@
 }
 
 .site-list__item {
-  height: 55px;
+  height: 56px;
 }
 
 .site-list__text {
@@ -47,7 +47,7 @@
   }
 
   .site-list__item:nth-child(3) {
-    padding-left: 156px;
+    padding-left: 158px;
     max-width: 309px;
   }
 
@@ -65,12 +65,24 @@
     background-color: #ffffff;
 
     &:hover {
+      color: #81b3d2;
       background-color: #ffffff;
     }
 
     &:active {
-      background-color: @bg-darkblue;
-      color: rgba(#ffffff, 0.2);
+      color: #c7c7c7;
+    }
+  }
+
+  .site-list__text.active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: #e2dedc;
     }
   }
 }
