@@ -10,6 +10,7 @@
 
 .photos__item {
   padding: 22px 20px;
+  padding-bottom: 18px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -18,8 +19,7 @@
 }
 
 .photos__title {
-  margin: 0;
-  margin-bottom: 5px;
+  margin: 12px 0 2px 0;
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -54,7 +54,7 @@
 
 .photos__result {
   margin: 0;
-  margin-top: 3px;
+  margin-top: 6px;
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -74,7 +74,7 @@
 
   .photos__item {
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     border-top: none;
     background-color: #e5e5e5;
     display: flex;
@@ -85,7 +85,7 @@
 
   .photos__main {
     min-width: 648px;
-    min-height: 267px;
+    min-height: 408px;
   }
 
   .photos__img-sunset {
@@ -118,19 +118,31 @@
   }
 
   .photos__title {
-    margin-top: 15px;
+    margin-top: 11px;
     margin-left: 20px;
   }
 
   .photos__text {
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   .photos__likes {
     position: absolute;
-    bottom: 32px;
+    bottom: 31px;
     right: 20px;
+  }
+
+  .photos__likes.other {
+    right: 30px;
+  }
+
+  .photos__likes.road {
+    right: 37px;
+  }
+
+  .photos__button {
+    padding-right: 7px;
   }
 }
 
@@ -179,7 +191,8 @@
 
   .photos__title {
     position: absolute;
-    bottom: 36px;
+    margin-left: 21px;
+    bottom: 40px;
     color: #ffffff;
   }
 
@@ -190,7 +203,8 @@
   }
 
   .photos__likes {
-    bottom: 32px;
+    bottom: 30px;
+    left: 21px;
   }
 
   .photos__button {

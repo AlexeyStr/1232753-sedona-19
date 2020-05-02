@@ -1,7 +1,7 @@
 .logo-mobile {
   position: absolute;
-  top: 220px;
-  right: calc(50% - 51px);
+  top: 223px;
+  right: calc(50% - 52px);
   margin: 0;
   width: 102px;
 }
@@ -9,5 +9,18 @@
 @media (min-width: @tablet-width) {
   .logo-mobile {
     top: 0;
+    content: url("../../img/logo-sedona-tablet.svg");
+    width: 102px;
+    height: 83px;
+    right: calc(50% - 51px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-mobile {
+    content: url("../../img/logo-sedona-desktop.svg");
+    width: 188px;
+    height: 96px;
+    right: calc(50% - 93px);
   }
 }
