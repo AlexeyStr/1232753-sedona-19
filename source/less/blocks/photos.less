@@ -155,6 +155,15 @@
     padding: 0;
   }
 
+  .photos__item-fone {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    opacity: 0.3;
+  }
+
   .photos__main {
     min-width: 1200px;
     min-height: 400px;
@@ -192,19 +201,23 @@
   .photos__title {
     position: absolute;
     margin-left: 21px;
-    bottom: 40px;
+    bottom: 38px;
     color: #ffffff;
+    z-index: 1;
   }
 
   .photos__text {
     position: absolute;
-    bottom: 14px;
+    margin-left: 21px;
+    bottom: 12px;
     color: #ffffff;
+    z-index: 1;
   }
 
   .photos__likes {
-    bottom: 30px;
-    left: 21px;
+    bottom: 28px;
+    right: 22px;
+    z-index: 1;
   }
 
   .photos__button {
