@@ -2,22 +2,23 @@
   .list-reset();
   border: none;
   padding: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .visited__title {
   color: #000000;
-  padding: 25px 0;
+  padding: 8px 0 9px 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 26px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .visited__item {
   margin: 0;
+  margin-bottom: 16px;
   color: #283136;
   font-size: 15px;
   font-weight: 700;
@@ -29,16 +30,30 @@
 .visited__item label {
   position: relative;
   display: inline-block;
-  padding-left: 60px;
+  padding-top: 9px;
+  padding-left: 79px;
+  font-size: 18px;
   cursor: pointer;
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .visited__item label::before {
   position: absolute;
-  width: 46px;
-  height: 46px;
+  width: 55px;
+  height: 55px;
   left: 0;
-  top: -6px;
+  top: -1px;
   content: "";
   background-color: #f2f2f2;
   border-radius: 5px;
@@ -48,8 +63,8 @@
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 13px;
-  top: 4px;
+  left: 17px;
+  top: 11px;
   content: url("../../img/icon-tick.svg");
 }
 
@@ -61,6 +76,7 @@
   .visited {
     width: 100%;
     padding: 0;
+    margin-bottom: 0;
   }
 
   .visited__title {
@@ -72,7 +88,7 @@
   }
 
   .visited__wrap {
-    margin-left: 100px;
+    margin-left: 95px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -82,13 +98,21 @@
     margin-bottom: 23px;
   }
 
+  .visited__item label {
+    padding-top: 8px;
+  }
+
+  .visited__item:nth-child(even) {
+    margin-left: 10px;
+  }
+
   .visited legend::before {
     position: absolute;
     content: "";
     width: 648px;
     height: 1px;
     background-color: #f2f2f2;
-    top: 70px;
+    top: 76px;
     left: 0;
     z-index: -1;
   }
@@ -97,15 +121,25 @@
 @media (min-width: @desktop-width) {
   .visited legend::before {
     width: 960px;
+    top: 48px;
   }
 
   .visited__wrap {
+    max-width: 957px;
     margin-left: 0;
     justify-content: space-between;
+  }
+
+  .visited__title {
+    padding-top: 23px;
   }
 
   .visited__item {
     width: unset;
     margin-bottom: 25px;
+  }
+
+  .visited__item:nth-child(even) {
+    margin-left: 0;
   }
 }

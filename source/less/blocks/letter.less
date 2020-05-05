@@ -7,11 +7,11 @@
 
 .letter__title {
   color: #000000;
-  padding: 25px 0;
+  padding: 4px 0 18px 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -22,11 +22,12 @@
 
 .letter__text textarea {
   border: none;
-  padding: 21px;
+  width: 278px;
+  padding: 16px 20px 15px 20px;
   background-color: #f2f2f2;
   color: #000000;
   font-family: "PT Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   resize: none;
@@ -41,7 +42,7 @@
   .letter__title {
     width: 400px;
     font-size: 21px;
-    padding: 60px 0;
+    padding: 48px 0 57px 0;
     background-color: #ffffff;
   }
 
@@ -51,7 +52,7 @@
     width: 648px;
     height: 1px;
     background-color: #f2f2f2;
-    top: 70px;
+    top: 58px;
     left: 0;
     z-index: -1;
   }
@@ -59,12 +60,18 @@
   .letter__text textarea {
     width: 100%;
     font-size: 18px;
-    padding-bottom: 9px;
+    padding-bottom: 14px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .letter legend::before {
     width: 960px;
+    top: 52px;
+  }
+
+  .letter__title {
+    padding-top: 41px;
+    padding-bottom: 58px;
   }
 }

@@ -10,6 +10,10 @@
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
 
+.site-list__item:not(:first-child) {
+  border-top: 1px solid #c7c7c7;
+}
+
 .site-list__text {
   display: block;
   width: 320px;
@@ -41,12 +45,12 @@
   .site-list__item {
     max-width: 153px;
     height: 55px;
-    border-bottom: none;
   }
 
   .site-list__item:nth-child(3) {
     margin-left: 158px;
     max-width: 150px;
+    border-bottom: unset;
   }
 
   .site-list__text {

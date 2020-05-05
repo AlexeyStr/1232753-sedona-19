@@ -10,6 +10,20 @@
   width: 280px;
   height: 58px;
   cursor: pointer;
+
+  &:hover {
+    background-color: @bg-middleblue;
+  }
+
+  &:active {
+    background-color: @bg-darkblue;
+    color: rgba(#ffffff, 0.2);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
 }
 
 .send__impotant {
@@ -18,12 +32,15 @@
 
 @media (min-width: @tablet-width) {
   .send {
+    padding: 52px 0;
     justify-content: space-between;
     display: flex;
     width: 100%;
   }
 
   .send__button {
+    padding-left: 0;
+    padding-right: 11px;
     width: 324px;
   }
 
@@ -32,10 +49,21 @@
     font-size: 14px;
     text-transform: uppercase;
   }
+
+  .send__impotant sup {
+    position: relative;
+    top: 5px;
+    left: 2px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .send {
+    padding-bottom: 20px;
+  }
+
   .send__button {
     width: 480px;
+    padding-right: 0;
   }
 }

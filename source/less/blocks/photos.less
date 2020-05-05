@@ -18,6 +18,13 @@
   margin-bottom: 10px;
 }
 
+.photos__main,
+.photos__others {
+  width: 280px;
+  height: 286px;
+  display: block;
+}
+
 .photos__title {
   margin: 12px 0 2px 0;
   color: #333333;
@@ -96,7 +103,7 @@
 
   .photos__others {
     min-width: 324px;
-    min-height: 267px;
+    height: 273px;
   }
 
   .photos__img-cactus {
@@ -155,6 +162,15 @@
     padding: 0;
   }
 
+  .photos__item-fone {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    opacity: 0.3;
+  }
+
   .photos__main {
     min-width: 1200px;
     min-height: 400px;
@@ -168,7 +184,7 @@
 
   .photos__others {
     min-width: 400px;
-    min-height: 267px;
+    height: 267px;
   }
 
   .photos__img-cactus {
@@ -192,19 +208,23 @@
   .photos__title {
     position: absolute;
     margin-left: 21px;
-    bottom: 40px;
+    bottom: 38px;
     color: #ffffff;
+    z-index: 1;
   }
 
   .photos__text {
     position: absolute;
-    bottom: 14px;
+    margin-left: 21px;
+    bottom: 12px;
     color: #ffffff;
+    z-index: 1;
   }
 
   .photos__likes {
-    bottom: 30px;
-    left: 21px;
+    bottom: 28px;
+    right: 22px;
+    z-index: 1;
   }
 
   .photos__button {
@@ -213,9 +233,5 @@
 
   .photos__result {
     color: #ffffff;
-  }
-
-  .photos__item a {
-    height: 267px;
   }
 }
