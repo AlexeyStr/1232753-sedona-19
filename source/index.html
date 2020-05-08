@@ -10,8 +10,11 @@
   <body>
     <header class="page-header">
         <p class="logo-mobile">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
-        </p>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+          </picture>
         <nav class="main-nav main-nav--opened">
           <button type="button" class="main-nav__button"></button>
           <ul class="main-nav site-list">
@@ -32,6 +35,11 @@
     </header>
     <main class="page-main">
       <div class="page-main__bg-image">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+          <img class="page-main__image-bg" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Картинка моста">
+        </picture>
         <div class="page-main__bg-text"></div>
         <div class="page-main__bg-intro"></div>
       </div>
@@ -49,7 +57,11 @@
               <p class="main-content__text-mod">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="main-content__img">
-            <img class="main-content__img-city" src="img/main-city-mobile@1x.jpg" width="520" height="260" alt="вид на городок">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="main-content__img-city" src="img/main-city-mobile@1x.jpg" width="520" height="260" srcset="img/main-city-mobile@2x.jpg 2x" alt="вид на городок">
+              </picture>
             </div>
             <ul class="main-content list-city">
               <li class="list-city__item">
@@ -73,7 +85,11 @@
               <p class="main-content__text-mod">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="main-content__img">
-            <img class="main-content__img-bridge" src="img/photo-bridge-mobile@1x.jpg" width="520" height="260" alt="вид на мост">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="main-content__img-bridge" src="img/photo-bridge-mobile@1x.jpg" width="520" height="260" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="вид на мост">
+              </picture>
             </div>
           </li>
           <li class="main-content__item">

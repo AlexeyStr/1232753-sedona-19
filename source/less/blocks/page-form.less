@@ -5,15 +5,20 @@
 }
 
 .page-form__bg-image {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  width: 320px;
+  height: 389px;
+  position: relative;
+  top: -285px;
+  z-index: -1;
+}
+
+.page-form__image-bg {
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
   width: 320px;
   height: 389px;
   margin: 0 auto;
-  top: -285px;
-  z-index: -1;
 }
 
 .page-form__bg-text {
@@ -45,10 +50,14 @@
   }
 
   .page-form__bg-image {
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
     width: 767px;
     height: 518px;
     top: -228px;
+  }
+
+  .page-form__image-bg {
+    width: 767px;
+    height: 518px;
   }
 
   .page-form__bg-text {
@@ -78,9 +87,12 @@
   }
 
   .page-form__bg-image {
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
     width: 1200px;
     top: -219px;
+  }
+
+  .page-form__image-bg {
+    width: 1200px;
   }
 
   .page-form__bg-intro {
