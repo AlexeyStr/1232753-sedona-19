@@ -51,8 +51,9 @@
 }
 
 .photos__button {
+  width: 22px;
+  height: 20px;
   padding-left: 0;
-  padding-right: 14px;
   border: none;
   background: none;
   cursor: pointer;
@@ -60,9 +61,15 @@
   opacity: 0.2;
 }
 
+.photos__thumb-up {
+  width: 22px;
+  height: 20px;
+}
+
 .photos__result {
   margin: 0;
   margin-top: 6px;
+  margin-left: 14px;
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -89,6 +96,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     position: relative;
+  }
+
+  .photos__item:nth-child(1) {
+    padding-bottom: 13px;
   }
 
   .photos__main {
@@ -133,7 +144,7 @@
 
   .photos__likes {
     position: absolute;
-    bottom: 31px;
+    bottom: 30px;
     right: 20px;
   }
 
@@ -147,6 +158,8 @@
 
   .photos__button {
     padding-right: 7px;
+    padding-top: 3px;
+    padding-left: 5px;
   }
 }
 
@@ -157,6 +170,10 @@
 
   .photos__item {
     padding: 0;
+  }
+
+  .photos__item:nth-child(1) {
+    padding-bottom: 0;
   }
 
   .photos__item-fone {
