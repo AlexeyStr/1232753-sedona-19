@@ -1,5 +1,5 @@
 .main-content {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .main-content__list {
@@ -202,8 +202,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-content {
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  .main-content__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .main-content__city {
-    min-width: 400px;
+    width: 400px;
     padding-top: 52px;
   }
 
@@ -212,14 +222,16 @@
   }
 
   .main-content__img {
-    min-width: 800px;
+    width: 800px;
     height: 256px;
     overflow: hidden;
   }
 
   .main-content__img-city {
-    margin-top: -72px;
+    position: relative;
     width: 800px;
+    height: 400px;
+    top: -70px;
   }
 
   .main-content__bridge {
@@ -229,8 +241,9 @@
 
   .main-content__img-bridge {
     width: 800px;
-    height: 400px;
-    margin-top: -77px;
+    height: 540px;
+    position: relative;
+    top: -211px;
   }
 
   .main-content__reason {

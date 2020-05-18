@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <svg style="display:none">
@@ -43,7 +48,7 @@
           <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav">
         <button type="button" class="main-nav__button"></button>
         <ul class="main-nav site-list">
           <li class="site-list__item">
@@ -193,8 +198,6 @@
           <div class="videopleer__top">
             <div class="videopleer__scale"></div>
             <div class="videopleer__marker"></div>
-          </div>
-          <div class="videopleer__bottom">
             <button type="button" class="videopleer__replay">
               <svg class="videopleer__replay-icon">
                 <use xlink:href="#icon-replay"></use>
@@ -211,6 +214,7 @@
               </svg>
             </button>
           </div>
+          <div class="videopleer__bottom"></div>
         </div>
       </section>
     </main>

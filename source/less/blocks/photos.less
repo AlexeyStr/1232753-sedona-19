@@ -51,9 +51,9 @@
 }
 
 .photos__button {
-  width: 22px;
-  height: 20px;
-  padding-left: 0;
+  width: 27px;
+  height: 27px;
+  left: 0;
   border: none;
   background: none;
   cursor: pointer;
@@ -62,8 +62,8 @@
 }
 
 .photos__thumb-up {
-  width: 22px;
-  height: 20px;
+  width: 27px;
+  height: 27px;
 }
 
 .photos__result {
@@ -157,13 +157,18 @@
   }
 
   .photos__button {
-    padding-right: 7px;
-    padding-top: 3px;
-    padding-left: 5px;
+    padding: 0;
+    position: relative;
+    left: 11px;
+    top: 3px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .photos {
+    width: 1200px;
+  }
+
   .photos__list {
     padding: 0;
   }
