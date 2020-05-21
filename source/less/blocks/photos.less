@@ -1,10 +1,12 @@
 .photos {
-  .list-reset();
+  margin: 0;
+  padding: 0;
   margin-top: -285px;
 }
 
 .photos__list {
-  .list-reset();
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -28,26 +30,33 @@
 .photos__title {
   margin: 12px 0 2px 0;
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
+  width: 180px;
+  height: 21px;
+  overflow: hidden;
 }
 
 .photos__text {
   margin: 0;
   margin-bottom: 5px;
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  width: 160px;
+  height: 21px;
+  overflow: hidden;
 }
 
 .photos__likes {
   display: flex;
   position: relative;
+  margin-left: -5px;
 }
 
 .photos__button {
@@ -167,6 +176,7 @@
 @media (min-width: @desktop-width) {
   .photos {
     width: 1200px;
+    background-color: #ffffff;
   }
 
   .photos__list {
@@ -181,7 +191,7 @@
     padding-bottom: 0;
   }
 
-  .photos__item-fone {
+  .photos__item-background {
     position: absolute;
     bottom: 0;
     width: 100%;

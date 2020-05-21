@@ -18,7 +18,7 @@
   display: block;
   width: 320px;
   height: 55px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 55px;
@@ -43,8 +43,9 @@
   }
 
   .site-list__item {
-    max-width: 153px;
+    width: 153px;
     height: 55px;
+    background-color: #ffffff;
   }
 
   .site-list__item:not(:first-child) {
@@ -61,7 +62,7 @@
     width: 153px;
     height: 55px;
     box-shadow: none;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 55px;
@@ -77,17 +78,17 @@
     &:active {
       color: #c7c7c7;
     }
-  }
 
-  .site-list__text.active {
-    color: #766357;
+    &--active {
+      color: #766357;
 
-    &:hover {
-      color: #604e43;
-    }
+      &:hover {
+        color: #604e43;
+      }
 
-    &:active {
-      color: #e2dedc;
+      &:active {
+        color: #e2dedc;
+      }
     }
   }
 }

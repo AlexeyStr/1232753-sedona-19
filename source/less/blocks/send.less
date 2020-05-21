@@ -1,5 +1,5 @@
 .send {
-  .list-reset();
+  margin: 0;
   padding: 20px 0;
 }
 
@@ -15,7 +15,8 @@
     background-color: @bg-middleblue;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: @bg-darkblue;
     color: rgba(#ffffff, 0.2);
   }
@@ -26,7 +27,7 @@
   }
 }
 
-.send__impotant {
+.send__required {
   display: none;
 }
 
@@ -44,13 +45,13 @@
     width: 324px;
   }
 
-  .send__impotant {
+  .send__required {
     display: block;
     font-size: 14px;
     text-transform: uppercase;
   }
 
-  .send__impotant sup {
+  .send__required sup {
     position: relative;
     top: 5px;
     left: 2px;

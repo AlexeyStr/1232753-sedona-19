@@ -13,7 +13,7 @@
     </script>
     <script src="js/picturefill.min.js" async></script>
   </head>
-  <body>
+  <body class="body body--photo">
     <svg style="display:none">
       <symbol id="icon-like" viewBox="0 0 22 20" width="22" height="20">
         <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -55,7 +55,7 @@
             <a class="site-list__text" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__text active">Фото и видео</a>
+            <a class="site-list__text site-list__text--active">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__text" href="form.html">Форма отзыва</a>
@@ -79,7 +79,6 @@
           <img class="page-photo__image-bg" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Картинка моста">
         </picture>
         <div class="page-photo__bg-text"></div>
-        <div class="page-photo__bg-intro"></div>
       </div>
       <section class="photos">
         <div class="preface">
@@ -101,14 +100,14 @@
             <h3 class="photos__title">Неродные просторы</h3>
             <p class="photos__text">Автор фото: Борис</p>
             <div class="photos__likes">
-              <button type="button" class="photos__button">
-                <svg class="photos__thumb-up">
+              <button type="button" class="photos__button" aria-label="Иконка лайк">
+                <svg class="photos__thumb-up" width="27" height="27">
                   <use xlink:href="#icon-like"></use>
                 </svg>
               </button>
               <p class="photos__result">1350</p>
             </div>
-            <div class="photos__item-fone"></div>
+            <div class="photos__item-background"></div>
           </li>
           <li class="photos__item">
             <a class="photos__others" href="">
@@ -124,8 +123,8 @@
             <h3 class="photos__title">Местная растительность</h3>
             <p class="photos__text">Автор фото: Сергей</p>
             <div class="photos__likes other">
-              <button type="button" class="photos__button">
-                <svg class="photos__thumb-up">
+              <button type="button" class="photos__button" aria-label="Иконка лайк">
+                <svg class="photos__thumb-up" width="27" height="27">
                   <use xlink:href="#icon-like"></use>
                 </svg>
               </button>
@@ -147,8 +146,8 @@
             <h3 class="photos__title">Дорога на север</h3>
             <p class="photos__text">Автор фото: Петр</p>
             <div class="photos__likes road">
-              <button type="button" class="photos__button">
-                <svg class="photos__thumb-up">
+              <button type="button" class="photos__button" aria-label="Иконка лайк">
+                <svg class="photos__thumb-up" width="27" height="27">
                   <use xlink:href="#icon-like"></use>
                 </svg>
               </button>
@@ -170,8 +169,8 @@
             <h3 class="photos__title">Мост дьявола</h3>
             <p class="photos__text">Автор фото: Антон</p>
             <div class="photos__likes other">
-              <button type="button" class="photos__button">
-                <svg class="photos__thumb-up">
+              <button type="button" class="photos__button" aria-label="Иконка лайк">
+                <svg class="photos__thumb-up" width="27" height="27">
                   <use xlink:href="#icon-like"></use>
                 </svg>
               </button>
@@ -198,18 +197,18 @@
           <div class="videopleer__top">
             <div class="videopleer__scale"></div>
             <div class="videopleer__marker"></div>
-            <button type="button" class="videopleer__replay">
-              <svg class="videopleer__replay-icon">
+            <button type="button" class="videopleer__replay" aria-label="Иконка повторного воспроизведения">
+              <svg class="videopleer__replay-icon" width="16" height="20">
                 <use xlink:href="#icon-replay"></use>
               </svg>
             </button>
-            <button type="button" class="videopleer__subtitles">
-              <svg class="videopleer__subtitles-icon">
+            <button type="button" class="videopleer__subtitles" aria-label="Иконка включения субтитров">
+              <svg class="videopleer__subtitles-icon" width="32" height="20">
                 <use xlink:href="#icon-subtitles"></use>
               </svg>
             </button>
-            <button type="button" class="videopleer__fullscreen">
-              <svg class="videopleer__fullscreen-icon">
+            <button type="button" class="videopleer__fullscreen" aria-label="Иконка включения полноэкранного режима">
+              <svg class="videopleer__fullscreen-icon" width="20" height="20">
                 <use xlink:href="#icon-fullscreen"></use>
               </svg>
             </button>
@@ -218,23 +217,23 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer photo">
+    <footer class="page-footer page-footer--photo">
       <p class="page-footer__hashtag">#visitsedona</p>
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item tw">
+      <ul class="page-footer__social social-list social-list--photo">
+        <li class="social-list__item social-list__item--tw" tabindex="0">
           <a href="" aria-label="Твиттер"></a>
         </li>
-        <li class="social-list__item fb">
+        <li class="social-list__item social-list__item--fb" tabindex="0">
           <a href="" aria-label="Фейсбук"></a>
         </li>
-        <li class="social-list__item yt">
+        <li class="social-list__item social-list__item--yt" tabindex="0">
           <a href="" aria-label="Ютуб"></a>
         </li>
       </ul>
       <div class="page-footer__copyright">
         <p class="page-footer__text">Разработано</p>
-        <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
-          <svg class="page-footer__academy">
+        <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Логотип академии">
+          <svg class="page-footer__academy" width="27" height="35">
             <use xlink:href="#icon-academy"></use>
           </svg>
         </a>
