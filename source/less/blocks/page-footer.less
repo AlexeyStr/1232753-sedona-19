@@ -15,7 +15,7 @@
   margin: 0 auto;
   margin-bottom: 37px;
   max-width: 140px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   font-size: 21px;
   font-weight: 700;
@@ -33,23 +33,23 @@
 .page-footer__text {
   margin: 0;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.page-footer__logo {
+.page-footer__copyright a {
   height: 35px;
   margin-top: -3px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #81b3d2;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     fill: #000000;
     opacity: 0.3;
   }
@@ -82,7 +82,7 @@
     line-height: 89px;
   }
 
-  .page-footer__logo {
+  .page-footer__copyright a {
     margin-top: 28px;
   }
 }
@@ -97,7 +97,7 @@
     box-shadow: 0 -13px 15px rgba(0, 1, 1, 0.2);
 
     &--form {
-      .page-footer__logo {
+      .page-footer__copyright a {
         margin-top: 19px;
       }
 
@@ -127,7 +127,7 @@
     line-height: 85px;
   }
 
-  .page-footer__logo {
+  .page-footer__copyright a {
     margin-top: 24px;
   }
 }

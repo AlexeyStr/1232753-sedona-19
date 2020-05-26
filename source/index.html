@@ -74,17 +74,7 @@
         </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__bg-image">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.webp 1x, img/bg-back-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.webp 1x, img/bg-back-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-back-mobile@1x.webp 1x, img/bg-back-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
-          <img class="page-main__image-bg" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Картинка моста">
-        </picture>
-        <div class="page-main__bg-text"></div>
-      </div>
+      <div class="page-main__bg-image"></div>
       <section class="page-main__preface">
         <h1 class="page-main__title">Седона &nbsp;-&nbsp; небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="page-main__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -96,7 +86,7 @@
               <div class="main-content__bg-image"></div>
               <h2 class="main-content__title">Настоящий городок</h2>
               <p class="main-content__text">&mdash; №1 &mdash;</p>
-              <p class="main-content__text-mod">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="main-content__text main-content__text--city">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="main-content__img">
               <picture>
@@ -134,9 +124,12 @@
           </li>
           <li class="main-content__item">
             <div class="main-content__bridge">
-              <h2 class="main-content__title">Там есть мост дьявола</h2>
+              <div class="main-content__title-wrap">
+                <h2 class="main-content__title main-content__title--bridge">Там есть</h2>
+                <h2 class="main-content__title main-content__title--bridge">мост дьявола</h2>
+              </div>
               <p class="main-content__text">&mdash; №2 &mdash;</p>
-              <p class="main-content__text-mod">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="main-content__text main-content__text--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="main-content__img">
               <picture>
@@ -190,9 +183,9 @@
         </picture>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <p class="page-footer__hashtag">#visitsedona</p>
-      <ul class="page-footer__social social-list">
+      <ul class="page-footer__social social-list social-list--index">
         <li class="social-list__item social-list__item--tw" tabindex="0">
           <a href="" aria-label="Твиттер"></a>
         </li>

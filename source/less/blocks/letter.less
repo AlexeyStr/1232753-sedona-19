@@ -3,6 +3,7 @@
   padding: 0;
   border: none;
   padding-bottom: 25px;
+  margin-top: 23px;
 }
 
 .letter__title {
@@ -13,7 +14,7 @@
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .letter__text {
@@ -23,7 +24,8 @@
 .letter__text textarea {
   border: none;
   width: 278px;
-  padding: 16px 20px 15px 20px;
+  height: 163px;
+  padding: 16px 20px 0 20px;
   background-color: #f2f2f2;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -38,10 +40,11 @@
   .letter {
     width: 100%;
     padding-bottom: 0;
+    margin-top: 0;
   }
 
   .letter__title {
-    margin: 0 auto;
+    margin-left: 198px;
     width: 400px;
     font-size: 21px;
     padding: 48px 0 57px 0;
@@ -57,6 +60,10 @@
     margin-top: 10px;
     left: 0;
     z-index: -1;
+  }
+
+  .letter__text {
+    height: 160px;
   }
 
   .letter__text textarea {
@@ -76,8 +83,13 @@
   }
 
   .letter__title {
-    margin: 0 auto;
+    margin-left: 355px;
     padding-top: 41px;
     padding-bottom: 58px;
+  }
+
+  .letter__text textarea {
+    padding-bottom: 0;
+    height: 160px;
   }
 }

@@ -69,17 +69,7 @@
     </header>
     <main class="page-photo">
       <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
-      <div class="page-photo__bg-image">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.webp 1x, img/bg-back-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.webp 1x, img/bg-back-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-back-mobile@1x.webp 1x, img/bg-back-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
-          <img class="page-photo__image-bg" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Картинка моста">
-        </picture>
-        <div class="page-photo__bg-text"></div>
-      </div>
+      <div class="page-photo__bg-image"></div>
       <section class="photos">
         <div class="preface">
           <h2 class="preface__title">Фото и видео</h2>
@@ -97,8 +87,8 @@
                 <img class="photos__img-sunset" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="обзорное фото">
               </picture>
             </a>
-            <h3 class="photos__title">Неродные просторы</h3>
-            <p class="photos__text">Автор фото: Борис</p>
+            <h3 class="photos__title photos__title--main">Неродные просторы</h3>
+            <p class="photos__text photos__text--main">Автор фото: Борис</p>
             <div class="photos__likes">
               <button type="button" class="photos__button" aria-label="Иконка лайк">
                 <svg class="photos__thumb-up" width="27" height="27">
@@ -193,27 +183,27 @@
             <img class="presentation__img" src="img/video-mobile@1x.jpg" width="321" height="201" srcset="img/video-mobile@2x.jpg 2x" alt="видеопрезентация">
           </picture>
         </div>
-        <div class="videopleer">
-          <div class="videopleer__top">
-            <div class="videopleer__scale"></div>
-            <div class="videopleer__marker"></div>
-            <button type="button" class="videopleer__replay" aria-label="Иконка повторного воспроизведения">
-              <svg class="videopleer__replay-icon" width="16" height="20">
+        <div class="player">
+          <div class="player__top">
+            <div class="player__scale"></div>
+            <div class="player__marker"></div>
+            <button type="button" class="player__replay" aria-label="Иконка повторного воспроизведения">
+              <svg class="player__replay-icon" width="16" height="20">
                 <use xlink:href="#icon-replay"></use>
               </svg>
             </button>
-            <button type="button" class="videopleer__subtitles" aria-label="Иконка включения субтитров">
-              <svg class="videopleer__subtitles-icon" width="32" height="20">
+            <button type="button" class="player__subtitles" aria-label="Иконка включения субтитров">
+              <svg class="player__subtitles-icon" width="32" height="20">
                 <use xlink:href="#icon-subtitles"></use>
               </svg>
             </button>
-            <button type="button" class="videopleer__fullscreen" aria-label="Иконка включения полноэкранного режима">
-              <svg class="videopleer__fullscreen-icon" width="20" height="20">
+            <button type="button" class="player__fullscreen" aria-label="Иконка включения полноэкранного режима">
+              <svg class="player__fullscreen-icon" width="20" height="20">
                 <use xlink:href="#icon-fullscreen"></use>
               </svg>
             </button>
           </div>
-          <div class="videopleer__bottom"></div>
+          <div class="player__bottom"></div>
         </div>
       </section>
     </main>

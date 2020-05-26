@@ -40,6 +40,13 @@
   color: #ffffff;
 }
 
+.main-content__title-wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 212px;
+}
+
 .main-content__text {
   margin: 0 auto;
   margin-bottom: 14px;
@@ -48,23 +55,21 @@
   width: 255px;
   text-transform: uppercase;
   color: #ffffff;
-}
 
-.main-content__text-mod {
-  margin: 0 auto;
-  font-size: 14px;
-  margin-bottom: 12px;
-  text-align: center;
-  width: 262px;
-  text-transform: uppercase;
-  color: #ffffff;
+  &--city {
+    width: 264px;
+  }
+
+  &--bridge {
+    width: 262px;
+  }
 }
 
 .main-content__bridge {
   margin: 0 auto;
   padding: 0;
-  padding-top: 42px;
-  padding-bottom: 27px;
+  padding-top: 40px;
+  padding-bottom: 25px;
   background-color: #81b3d2;
 }
 
@@ -132,23 +137,32 @@
   }
 
   .main-content__title {
-    width: 150px;
+    width: 151px;
     margin: 0 auto;
     margin-bottom: 7px;
     font-size: 21px;
     line-height: 26px;
   }
 
+  .main-content__title--bridge {
+    margin-bottom: 0;
+  }
+
+  .main-content__title-wrap {
+    flex-wrap: wrap;
+    width: 162px;
+    margin-bottom: 9px;
+  }
+
   .main-content__text {
     width: 162px;
     font-size: 14px;
     margin-bottom: 22px;
-  }
 
-  .main-content__text-mod {
-    margin: 0 auto;
-    max-width: 162px;
-    font-size: 14px;
+    &--city,
+    &--bridge {
+      margin: 0 auto;
+    }
   }
 
   .main-content__img-city {
@@ -157,7 +171,7 @@
 
   .main-content__bridge {
     margin: 0;
-    min-width: 256px;
+    width: 256px;
     height: 263px;
     overflow: hidden;
     padding: 47px;
@@ -221,6 +235,10 @@
 
   .main-content__title {
     margin-bottom: 9px;
+
+    &--bridge {
+      margin-bottom: 0;
+    }
   }
 
   .main-content__img {
@@ -261,13 +279,17 @@
     margin-bottom: 8px;
   }
 
+  .main-content__text--city {
+    width: 264px;
+  }
+
+  .main-content__text--bridge {
+    width: 230px;
+  }
+
   .main-content__text-mod:nth-child(n+3) {
     font-size: 14px;
     min-width: 230px;
-  }
-
-  .main-content__text-mod:nth-child(4) {
-    max-width: 262px;
   }
 
   .main-content__reason .main-content__text {

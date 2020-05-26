@@ -35,9 +35,9 @@
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
-  width: 180px;
+  max-width: 200px;
   height: 21px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .photos__text {
@@ -48,15 +48,16 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  width: 160px;
+  max-width: 200px;
   height: 21px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .photos__likes {
   display: flex;
   position: relative;
   margin-left: -5px;
+  height: 27px;
 }
 
 .photos__button {
@@ -73,6 +74,7 @@
 .photos__thumb-up {
   width: 27px;
   height: 27px;
+  margin-top: 3px;
 }
 
 .photos__result {
@@ -80,7 +82,7 @@
   margin-top: 6px;
   margin-left: 14px;
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
@@ -142,13 +144,24 @@
   }
 
   .photos__title {
+    max-width: 200px;
     margin-top: 11px;
     margin-left: 20px;
+
+    &--main {
+      max-width: 500px;
+      overflow: auto;
+    }
   }
 
   .photos__text {
     margin-left: 20px;
     margin-top: 0;
+
+    &--main {
+      max-width: 500px;
+      overflow: auto;
+    }
   }
 
   .photos__likes {

@@ -1,4 +1,4 @@
-.videopleer {
+.player {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -8,7 +8,7 @@
   left: 20px;
 }
 
-.videopleer__top {
+.player__top {
   position: relative;
   width: 280px;
   height: 45px;
@@ -16,7 +16,7 @@
   opacity: 0.6;
 }
 
-.videopleer__scale {
+.player__scale {
   position: absolute;
   width: 235px;
   height: 3px;
@@ -26,7 +26,7 @@
   left: 22px;
 }
 
-.videopleer__marker {
+.player__marker {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -36,14 +36,14 @@
   left: 58px;
 }
 
-.videopleer__bottom {
+.player__bottom {
   width: 280px;
   height: 66px;
   background-color: #f2f2f2;
   z-index: -1;
 }
 
-.videopleer__replay {
+.player__replay {
   position: absolute;
   cursor: pointer;
   border: none;
@@ -63,12 +63,12 @@
   }
 }
 
-.videopleer__replay-icon {
+.player__replay-icon {
   width: 16px;
   height: 20px;
 }
 
-.videopleer__subtitles {
+.player__subtitles {
   position: absolute;
   cursor: pointer;
   border: none;
@@ -88,12 +88,12 @@
   }
 }
 
-.videopleer__subtitles-icon {
+.player__subtitles-icon {
   width: 32px;
   height: 20px;
 }
 
-.videopleer__fullscreen {
+.player__fullscreen {
   position: absolute;
   cursor: pointer;
   border: none;
@@ -113,13 +113,13 @@
   }
 }
 
-.videopleer__fullscreen-icon {
+.player__fullscreen-icon {
   width: 20px;
   height: 20px;
 }
 
 @media (min-width: @tablet-width) {
-  .videopleer {
+  .player {
     min-width: 648px;
     height: 93px;
     top: unset;
@@ -127,28 +127,28 @@
     bottom: 47px;
   }
 
-  .videopleer__top {
+  .player__top {
     min-width: 648px;
     height: 93px;
   }
 
-  .videopleer__scale {
+  .player__scale {
     top: 45px;
     left: 93px;
     width: 389px;
   }
 
-  .videopleer__marker {
+  .player__marker {
     top: 42px;
     left: 205px;
   }
 
-  .videopleer__bottom {
+  .player__bottom {
     position: unset;
     height: 0;
   }
 
-  .videopleer__replay {
+  .player__replay {
     fill: #ffffff;
     top: 34px;
     left: 30px;
@@ -164,7 +164,7 @@
     }
   }
 
-  .videopleer__subtitles {
+  .player__subtitles {
     fill: #ffffff;
     left: unset;
     top: 31px;
@@ -181,7 +181,7 @@
     }
   }
 
-  .videopleer__fullscreen {
+  .player__fullscreen {
     fill: #ffffff;
     left: unset;
     top: 31px;
@@ -200,29 +200,29 @@
 }
 
 @media (min-width: @desktop-width) {
-  .videopleer {
+  .player {
     left: 200px;
     margin-bottom: 41px;
     min-width: 800px;
   }
 
-  .videopleer__top {
+  .player__top {
     min-width: 800px;
   }
 
-  .videopleer__scale {
+  .player__scale {
     width: 540px;
   }
 
-  .videopleer__replay {
+  .player__replay {
     left: 28px;
   }
 
-  .videopleer__subtitles {
+  .player__subtitles {
     left: 668px;
   }
 
-  .videopleer__fullscreen {
+  .player__fullscreen {
     left: 731px;
   }
 }
